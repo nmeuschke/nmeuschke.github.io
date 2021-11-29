@@ -1,3 +1,6 @@
 a.bibbase.bibbase_page.link {
 	display : none;
 }
+
+a[title*=Demo] { background-image: url(URL to the icon of your choice) }
+a[title*=Demo] .bibbase_icon { display: none; }
