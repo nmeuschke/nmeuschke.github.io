@@ -5,10 +5,20 @@ a.bibbase.bibbase_page.link {
 
 /*For custom links, display link text instead of default link icon*/
 img.bibbase_icon[title*=Demo] { display: none; }
-img.bibbase_icon[title*=Demo] + span.bibbase_icon_text { display: inline; }
+img.bibbase_icon[title*=Demo] + span.bibbase_icon_text 
+{ 
+	display: inline; 
+	text-transform: lowercase;
+}
 
 img.bibbase_icon[title*=Data] { display: none; }
-img.bibbase_icon[title*=Data] + span.bibbase_icon_text { display: inline; }
+img.bibbase_icon[title*=Data] + span.bibbase_icon_text { 
+	display: inline; 
+	text-transform: lowercase;
+}
 
 img.bibbase_icon[title*=Code] { display: none; }
-img.bibbase_icon[title*=Code] + span.bibbase_icon_text { display: inline; }
+img.bibbase_icon[title*=Code] + span.bibbase_icon_text { 
+	display: inline; 
+	text-transform: lowercase;
+}
