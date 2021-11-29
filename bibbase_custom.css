@@ -3,4 +3,4 @@ a.bibbase.bibbase_page.link {
 }
 
 /*a[title*=Demo] { background-image: url(URL to the icon of your choice) }*/
-img.bibbase_icon[title*=Demo] .bibbase_icon { display: none; }
+img.bibbase_icon[title*=Demo] { display: none; }
