@@ -1,6 +1,8 @@
-a.bibase.author.link{
+/*Make owner name bold*/
+a.bibbase.author.link{
 	font-weight: bold;
 }
+
 /*Hide auto-generated bibbase links*/
 a.bibbase.bibbase_page.link {
 	display : none;
