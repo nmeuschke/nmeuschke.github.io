@@ -15,13 +15,17 @@
   <!--script src="js/scripts.js"></script-->
   <script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F2532143%2Fitems%3Fkey%3Drl5jlj0mxfw2EGQuHTIETmAY%26format%3Dbibtex%26limit%3D100&jsonp=1&sort=month&owner=none&noIndex=true"></script>
   <script>
-    var linksToRemove = document.getElementsByClassName("bibbase author link"), parent, text;
+    /*var linksToRemove = document.getElementsByClassName("bibbase author link"), parent, text;
     for(var i=0, max=linksToRemove.length; i<max; i++) {
         parent = linksToRemove[i].parentNode;
         text = linksToRemove[i].firstChild;
         parent.insertBefore(text,linksToRemove[i]);
         parent.removeChild(linksToRemove[i]);
         parent.normalize();
+    }*/
+    var links = document.getElementsByClassName("bibbase author link");
+    for(var i=0, max=links.length; i<max; i++) {
+      links[i].removeAttribute('href');
     }
   </script>
   </body>
