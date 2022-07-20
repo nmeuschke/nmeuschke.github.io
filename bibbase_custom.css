@@ -1,3 +1,6 @@
+a.bibase.author.link{
+	font-weight: bold;
+}
 /*Hide auto-generated bibbase links*/
 a.bibbase.bibbase_page.link {
 	display : none;
