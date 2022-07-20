@@ -15,10 +15,10 @@
   <!--script src="js/scripts.js"></script-->
   <script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F2532143%2Fitems%3Fkey%3Drl5jlj0mxfw2EGQuHTIETmAY%26format%3Dbibtex%26limit%3D100&jsonp=1&sort=month&owner=none&noIndex=true"></script>
   <script>
-    var links = document.getElementsByClassName("bibbase author link");
-    for(var i=0, max=links.length; i<max; i++) {
-      links[i].href = '';
-    }
+    var toRemove = document.getElementsByClassName("bibbase author link"), parent = toRemove.parentNode, text = toRemove.firstChild;
+    parent.insertBefore(text,toRemove);
+    parent.removeChild(toRemove);
+    parent.normalize();
   </script>
   </body>
 </html>
