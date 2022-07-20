@@ -19,8 +19,8 @@
     for(var i=0, max=linksToRemove.length; i<max; i++) {
         parent = linksToRemove[i].parentNode;
         text = linksToRemove[i].firstChild;
-        parent.insertBefore(text,toRemove);
-        parent.removeChild(toRemove);
+        parent.insertBefore(text,linksToRemove[i]);
+        parent.removeChild(linksToRemove[i]);
         parent.normalize();
     }
   </script>
